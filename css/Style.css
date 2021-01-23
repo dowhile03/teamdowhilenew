@@ -6,6 +6,7 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-image: linear-gradient(to right top, #a5ff87, #afff7f, #baff76, #c5ff6e, #d0ff66);
 }
 
 :root{
@@ -18,7 +19,7 @@ html, body{
     --midnight: #104f55;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --sky:  linear-gradient(to right top, #ff8700, #ffa000, #ffb800, #ffd100, #ffe900);
 
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
@@ -73,9 +74,6 @@ span{
     font-family: var(--Abel);
 }
 
-.container{
-    margin: 0 5vw;
-}
 
 .text-gray{
     color: var(--text-gray);
@@ -175,7 +173,7 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/Background-image.png');
+    background: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80);
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -190,6 +188,7 @@ main .site-title .site-background{
 
 main .site-title h1, h3{
     margin: .3rem;
+    color: black;
 }
 
 main .site-title .btn{

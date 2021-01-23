@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="html/css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" type="html/css" rel="stylesheet">
+    <script data-ad-client="ca-pub-3298465686149880" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>Blogs</title>
+    <link rel="icon" href="../images/mages.png" type="image/x-icon">
+
+</head>
+
+<body style="background-image: url(../assets/images/bg.png);">
+   
+    <style>
+        #navtest{
+       top: 0;
+       position: sticky;
+       z-index: 1;
+     }
+   </style>
+       
+     <div id="navtest">
+   
+   </div>
+
+
+    <form class="card" style="padding-left: 10vw; padding-right: 10vw;padding-top: 5vw; margin: 6rem;">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email"  class="form-control" id="exampleFormControlInput1" placeholder="Enter Valid Email-Address">
+          </div>
+        
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Topic/Suggestions</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+       
+      
+       
+            <div class="form-group">
+                <progress value="0" max="100" id="uploader">0</progress> <br>
+              <label id="fileUpload" for="exampleFormControlFile1">Attach your file</label>
+              <input type="file" class="form-control-file" id="file">
+            </div>
+         
+
+      <button class="btn btn-outline-danger" id="fileUploadBtn" style="margin: 5vw;" onclick="submitFile()" >Submit My Blog</button>
+<p id="note" ><b>NOTE :- You Must Login Before You Submit your blog To Teamdowhile</b></p>
+      </form>
+<div id="footerTest"></div>>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA-0yI5h9_hPjDf_-jKe7w3LSkP0He8Q00",
+    authDomain: "teamdowhile03.firebaseapp.com",
+    databaseURL: "https://teamdowhile03.firebaseio.com",
+    projectId: "teamdowhile03",
+    storageBucket: "teamdowhile03.appspot.com",
+    messagingSenderId: "600225555475",
+    appId: "1:600225555475:web:a1e5fe17f60e2db43c8be6",
+    measurementId: "G-193KGVRXQR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="../blog/create.js"></script>
+<script src="./blogsnav.js"></script>
+<script src="../footer.js"></script>
+</body>
+</html>
